@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Quotes Reader</title>
+    </head>
+    <body style="text-align:center;">
+        <h2>Quotes Applicator</h2>
+        <p id="quote"></p>
+        <buttoon onclick="Quote()">Quote Me</button>
+            <script>
+                let q=[
+                    "Stay focused,Stay strong!Success will follow you",
+                    "Don't wish for it,Do it",
+                    "Success grew-up eith self-belief",
+                    "Focus and finish",
+                    "Discipline grabs every dreams"
+                ];
+                function Quote(){
+                    let Index=Math.floor(Math.random() * q.length);
+                    document.getElementById("quote").innerText=q[Index];
+                }
+                Quote();
+                 </script></body></html>
+
